@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Hiring - Colour Trading App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #1e293b;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: #22c55e;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    form {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Colour Trading App</h2>
+</header>
+
+<section class="hero">
+  <h1>Join as Agent & Earn Daily 💸</h1>
+  <p>Start your earning journey with India's fastest growing colour trading platform.</p>
+  <button class="btn" onclick="scrollToForm()">Apply Now</button>
+</section>
+
+<section class="section">
+  <h2>Why Become an Agent?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>High Commission</h3>
+      <p>Earn up to 30% commission on referrals</p>
+    </div>
+    <div class="card">
+      <h3>Daily Income</h3>
+      <p>Withdraw earnings anytime</p>
+    </div>
+    <div class="card">
+      <h3>Easy Work</h3>
+      <p>No experience required</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>How It Works</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>1. Register</h3>
+      <p>Fill the form below</p>
+    </div>
+    <div class="card">
+      <h3>2. Get Link</h3>
+      <p>Receive your referral link</p>
+    </div>
+    <div class="card">
+      <h3>3. Earn Money</h3>
+      <p>Invite users & earn commission</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="form">
+  <h2>Apply Now</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <input type="text" placeholder="City" required>
+    <button class="btn" type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Colour Trading App | All Rights Reserved
+</footer>
+
+<script>
+  function scrollToForm() {
+    document.getElementById("form").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    alert("Application submitted! Our team will contact you.");
+  }
+</script>
+
+</body>
+</html>
